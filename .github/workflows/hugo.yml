@@ -34,13 +34,19 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Debug Hugo version
+        run: hugo version
+
       - name: Build with Hugo
-        run: hugo --minify
+        run: |
+          hugo --minify
+          ls -la public/
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./public
+          name: hugo-site
 
   deploy:
     environment:
