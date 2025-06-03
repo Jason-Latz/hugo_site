@@ -13,3 +13,10 @@ theme = 'PaperMod'
   ShowRssButtonInSectionTermList = true
   ShowWordCount = true
   ShowFullTextinRSS = true
+
+[params.favicon]
+  main = "/images/favicon.ico"
+  appleTouchIcon = "/images/apple-touch-icon.png"
+  safariPinnedTab = "/images/safari-pinned-tab.svg"
+  msapplicationTileImage = "/images/mstile-150x150.png"
+  msapplicationTileColor = "#ffffff"
