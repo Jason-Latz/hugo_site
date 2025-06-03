@@ -73,7 +73,7 @@
 </head>
 <body>
     <div class="profile-section">
-        <img src="/images/profile.jpeg" alt="Jason Latz" class="profile-image">
+        <img src="{{ "images/profile.jpeg" | relURL }}" alt="Jason Latz" class="profile-image">
         <div class="profile-info">
             {{ .Content }}
         </div>
