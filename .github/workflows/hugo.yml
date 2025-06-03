@@ -31,7 +31,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0
+      HUGO_VERSION: 0.146.0
     steps:
       - name: Install Hugo CLI
         run: |
@@ -63,7 +63,7 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --debug
+            --logLevel debug
       - name: Debug build output
         run: |
           echo "Contents of public directory:"
